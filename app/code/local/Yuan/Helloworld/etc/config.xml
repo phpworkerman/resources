@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Yuan_Helloworld>
+            <version>0.2.0</version>
+        </Yuan_Helloworld>
+    </modules>
+    <frontend>
+        <routers>
+            <helloworld>
+                <use>standard</use>
+                <args>
+                    <module>Yuan_Helloworld</module>
+                    <frontName>helloworld</frontName>
+                </args>
+            </helloworld>
+        </routers>
+    </frontend>
+    <global>
+        <!-- ... -->
+        <models>
+            <helloworld>
+                <class>Yuan_Helloworld_Model</class>
+                <!--
+                    need to create our own resource, can't just
+                    use core_mysql4
+                    -->
+                <resourceModel>helloworld_mysql4</resourceModel>
+            </helloworld>
+        </models>
+        <!-- ... -->
+    </global>
+</config>

@@ -27,6 +27,14 @@
                     -->
                 <resourceModel>helloworld_mysql4</resourceModel>
             </helloworld>
+            <helloworld_mysql4>
+                <class>Yuan_Helloworld_Model_Resource_Mysql4</class>
+                <entities>
+                    <blogpost>
+                        <table>blog_posts</table>
+                    </blogpost>
+                </entities>
+            </helloworld_mysql4>
         </models>
         <!-- ... -->
     </global>

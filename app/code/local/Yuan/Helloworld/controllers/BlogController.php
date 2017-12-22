@@ -42,4 +42,13 @@ class Yuan_Helloworld_BlogController extends Mage_Core_Controller_Front_Action {
             echo nl2br($blog_post->getPost());
         }
     }
+    public function eavReadAction(){
+        $eavModel = Mage::getModel('helloworld-eav/eavblogpost');
+	    $params = $this->getRequest()->getParams();
+	    echo("Loading the blogpost with an ID of ".$params['id']."<br />");
+	    $eavModel->load($params['id']);
+	    $data = $eavModel->getData();
+	    var_dump($data);
+	}
+
 }

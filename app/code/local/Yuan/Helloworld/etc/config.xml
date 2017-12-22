@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Yuan_Helloworld>
-            <version>0.2.0</version>
+            <version>0.1.0</version>
         </Yuan_Helloworld>
     </modules>
     <frontend>
@@ -35,7 +35,53 @@
                     </blogpost>
                 </entities>
             </helloworld_mysql4>
+            <helloworld-eav>
+                <class>Yuan_Helloworld_Model</class>
+                <resourceModel>helloworld-eav_mysql4</resourceModel>
+            </helloworld-eav>
+            <helloworld-eav_mysql4>
+                <class>Yuan_Helloworld_Model_Resource_Eav_Mysql4</class>
+                <entities>
+                    <blogpost>
+                        <table>eavblog_posts</table>
+                    </blogpost>
+                </entities>
+            </helloworld-eav_mysql4>
         </models>
         <!-- ... -->
+        <resources>
+            <!-- ... -->
+            <helloworld_setup>
+                <setup>
+                    <module>Yuan_Helloworld</module>
+                    <class>Yuan_Helloworld_Model_Setup_Mysql4_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </helloworld_setup>
+            <!-- ... -->
+            <helloworld-eav_write>
+                <connection>
+                    <use>default_write</use>
+                </connection>
+            </helloworld-eav_write>
+            <helloworld-eav_read>
+                <connection>
+                    <use>default_read</use>
+                </connection>
+            </helloworld-eav_read>
+            <helloworld-eav_setup>
+                <setup>
+                    <module>Yuan_Helloworld</module>
+                    <class>Yuan_Helloworld_Model_Entity_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </helloworld-eav_setup>
+        </resources>
+
     </global>
+
 </config>

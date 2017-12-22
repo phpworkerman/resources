@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <helloconfig translate="label" module="helloworld">
+            <label>Hello Config</label>
+            <sort_order>99999</sort_order>
+        </helloconfig>
+    </tabs>
+</config>

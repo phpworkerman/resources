@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Yuan_Adminhtml>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Yuan_Adminhtml>
+    </modules>
+</config>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Yuan_Adminhtml>
+            <version>0.1.0</version>
+        </Yuan_Adminhtml>
+    </modules>
+    <global>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <review_grid>Yuan_Adminhtml_Block_Review_Grid</review_grid>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+    </global>
+</config>

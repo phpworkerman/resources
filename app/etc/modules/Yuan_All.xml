@@ -4,5 +4,9 @@
             <active>true</active>
             <codePool>local</codePool>
         </Yuan_Adminhtml>
+        <Yuan_Shopping>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Yuan_Shopping>
     </modules>
 </config>
